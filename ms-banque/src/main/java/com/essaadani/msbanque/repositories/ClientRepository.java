@@ -1,4 +1,4 @@
-package com.essaadani.msbanque.dao;
+package com.essaadani.msbanque.repositories;
 
 import com.essaadani.msbanque.entities.Client;
 import org.springframework.data.jpa.repository.JpaRepository;

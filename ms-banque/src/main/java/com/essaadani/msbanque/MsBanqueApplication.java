@@ -1,12 +1,10 @@
 package com.essaadani.msbanque;
 
-import com.essaadani.msbanque.dao.ClientRepository;
-import com.essaadani.msbanque.dao.CompteRepository;
+import com.essaadani.msbanque.repositories.ClientRepository;
+import com.essaadani.msbanque.repositories.CompteRepository;
 import com.essaadani.msbanque.entities.Client;
 import com.essaadani.msbanque.entities.Compte;
 import com.essaadani.msbanque.entities.TypeCompte;
-import lombok.AllArgsConstructor;
-import lombok.Data;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -27,11 +25,9 @@ public class MsBanqueApplication {
                             ClientRepository clientRepository,
                             RepositoryRestConfiguration repositoryRestConfiguration){
         return args ->  {
-            Client mohamed = new Client(null, "Essaadani Mohamed", null);
-            clientRepository.save(mohamed);
+            Client mohamed = clientRepository.save(new Client(null, "Essaadani Mohamed", null));
 
-            Client hicham = new Client(null, "Essaadani hicham", null);
-            clientRepository.save(hicham);
+            Client hicham = clientRepository.save(new Client(null, "Essaadani hicham", null));
 
             compteRepository.save(new Compte(null, Math.random()*9000, new Date(), TypeCompte.COURANT, mohamed));
             compteRepository.save(new Compte(null, Math.random()*9000, new Date(), TypeCompte.COURANT, mohamed));
@@ -40,7 +36,7 @@ public class MsBanqueApplication {
 
             compteRepository.findAll()
                     .forEach(cpt -> {
-                        System.out.println(cpt.toString());
+                        System.out.println(cpt.getSolde());
                     });
 
             repositoryRestConfiguration.exposeIdsFor(Compte.class);

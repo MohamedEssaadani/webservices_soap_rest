@@ -1,7 +1,8 @@
 package com.essaadani.msbanque.web;
 
-import com.essaadani.msbanque.dao.CompteRepository;
+import com.essaadani.msbanque.repositories.CompteRepository;
 import com.essaadani.msbanque.entities.Compte;
+import com.essaadani.msbanque.repositories.CompteRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
