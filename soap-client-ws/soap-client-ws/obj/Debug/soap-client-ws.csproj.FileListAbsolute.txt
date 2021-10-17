@@ -1,0 +1,7 @@
+C:\Users\XPS\source\repos\soap-client-ws\soap-client-ws\bin\Debug\soap-client-ws.exe.config
+C:\Users\XPS\source\repos\soap-client-ws\soap-client-ws\bin\Debug\soap-client-ws.exe
+C:\Users\XPS\source\repos\soap-client-ws\soap-client-ws\bin\Debug\soap-client-ws.pdb
+C:\Users\XPS\source\repos\soap-client-ws\soap-client-ws\obj\Debug\soap-client-ws.csprojAssemblyReference.cache
+C:\Users\XPS\source\repos\soap-client-ws\soap-client-ws\obj\Debug\soap-client-ws.csproj.CoreCompileInputs.cache
+C:\Users\XPS\source\repos\soap-client-ws\soap-client-ws\obj\Debug\soap-client-ws.exe
+C:\Users\XPS\source\repos\soap-client-ws\soap-client-ws\obj\Debug\soap-client-ws.pdb
